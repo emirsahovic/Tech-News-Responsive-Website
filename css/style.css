@@ -316,6 +316,70 @@ p {
   margin: 0;
 }
 
+/* About */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 3rem;
+}
+
+#about-a aside {
+  border-radius: 20% 7% 12% 20%;
+}
+
+#about-a aside h2 {
+  padding-top: 4rem;
+}
+
+#about-b .about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about-b .about-info > div {
+  padding: 1rem;
+}
+
+#about-b .about-info > div:nth-child(2) {
+  background-color: #333;
+  color: var(--light-color);
+  border-radius: 20% 3% 5%;
+  font-weight: bold;
+}
+
+#about-b .about-info > div ul {
+  text-align: center;
+}
+
+#about-b .about-info > div ul li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#about-b .about-info > div i {
+  background-color: #333;
+  color: var(--primary-color);
+  border-radius: 50%;
+  padding: 1.3rem 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
 /* Footer */
 #main-footer {
   background: var(--dark-color);
