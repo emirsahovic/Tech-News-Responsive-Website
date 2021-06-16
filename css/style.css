@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 :root {
   --primary-color: #c72727;
   --secondary-color: blueviolet;
@@ -13,7 +15,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: var(--light-color);
 }
@@ -325,7 +327,7 @@ p {
 }
 
 .card {
-  background: #fff;
+  background: var(--light-color);
   padding: 1rem;
 }
 
@@ -346,9 +348,15 @@ p {
   padding-top: 4rem;
 }
 
+#about-b {
+  background-color: #c72727;
+  border-radius: 25%;
+}
+
 #about-b .about-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 25px;
 }
 
 #about-b .about-info > div {
@@ -378,6 +386,43 @@ p {
   border-radius: 50%;
   padding: 1.3rem 1.8rem;
   margin-bottom: 0.4rem;
+}
+
+#about-c .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#about-c .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    padding: 25px;
+    margin: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#about-c .card:hover {
+  transform: scale(1.1);
+}
+
+#about-c .card > div {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  border-radius: 10px;
+  background-color: #666;
+  color: #eee;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
 }
 
 /* Footer */
