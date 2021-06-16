@@ -24,6 +24,11 @@
   .items {
     grid-template-columns: 1fr;
   }
+
+  #about-c .grid-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
   
   @media (max-width: 600px) {
     /* Stack Grid Items */
@@ -86,12 +91,12 @@
       margin-top: 25px;
     }
   
-    #about-b .about-info > div:nth-child(1) {
-      border-top: #333 1px solid;
+    #about-c .grid-container {
+      grid-template-columns: 1fr;
     }
   
     #main-footer {
-      margin-top: 0.2rem;
+      margin-top: 2.5rem;
     }
   }
   
